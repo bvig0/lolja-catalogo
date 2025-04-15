@@ -43,7 +43,7 @@ header nav a {
 /* Cards */
 .card {
     text-align: center;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
     background-color: #f5f5f5;
     box-shadow: 0 4px 8px #000000c4;
@@ -53,7 +53,7 @@ header nav a {
 }
 
 .card img {
-    width: 400px;
+    width: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
@@ -100,7 +100,7 @@ button{
     color: white;
     border: none;
     border-radius: 1.6rem;
-    width: 350px;
+    width: 300px;
     height: 55px;
     padding: 10px 20px;
     opacity: 0; /* --> Deixa o botão escondido */
@@ -136,4 +136,19 @@ button a {
 
 .card:hover .blur {
     opacity: 1; /* --> Faz o desfoque aparecer quando o mouse passa por cima */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    color: #f0f0f0;;
+    border-radius: 5px;
+    background-color: #f38e23;
+    padding: 20px 0 ;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+footer a {
+    color: #f0f0f0;;
 }
