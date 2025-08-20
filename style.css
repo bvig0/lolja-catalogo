@@ -164,7 +164,7 @@ footer a {
 }
 
 /* ----------------------------------------------------------------------------------------------- */
-/* Media Query CELULAR*/
+/* Media Query CELULARES*/
 
 @media (max-width: 768px) {
 
@@ -191,6 +191,7 @@ footer a {
         display: flex;
     }
 
+    /* Cards */
     .card {
         width: 150px;
     }
@@ -225,9 +226,40 @@ footer a {
         height: 50%;
     }
 
-
-
+    /* Rodapé */
     footer {
         font-size: 0.8em;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Media Query TABLETS/ CELULARES DEITADOS*/
+@media (min-width: 769px) and (max-width: 1023px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        padding: 0 20px;
+    }
+
+    header nav a {
+        padding: 0px 10px 0px 0px;
+        font-weight: 500;
+        display: flex;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Media Query LAPTOPS ou telas maiores*/
+@media (min-width: 1024px) {
+    header h1 {
+        padding: 0 20px;
+    }
+
+    header nav a {
+        padding: 0px 10px 0px 0px;
+        font-weight: 500;
+        display: flex;
     }
 }
