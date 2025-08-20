@@ -8,18 +8,18 @@
 body {
     background-color: #e6e6e6;
     color: #333;
-    font-family: 'Dosis', sans-serif ;
+    font-family: 'Dosis', sans-serif;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #f38e23;;
+    background-color: #f38e23;
+    ;
     color: #f0f0f0;
-    padding: 20px 0;
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 60px;
     font-size: 1.5em;
     box-shadow: 0 4px 8px black;
 }
@@ -61,41 +61,44 @@ header nav a {
 }
 
 /* Imagens Main e Hover */
-.card .img-hover{
+.card .img-hover {
     position: absolute;
     transition: 1s;
     top: 0;
     left: 0;
-    opacity: 0; /* --> Deixa a imagem escondida */
+    opacity: 0;
+    /* --> Deixa a imagem escondida */
 }
 
 .card:hover .img-hover {
-    opacity: 1; /* --> Faz a imagem aparecer quando o mouse passa por cima */
+    opacity: 1;
+    /* --> Faz a imagem aparecer quando o mouse passa por cima */
 }
 
 .card:hover .img-main {
-    opacity: 0; /* --> Deixa a imagem escondida quando o mouse passa por cima */
+    opacity: 0;
+    /* --> Deixa a imagem escondida quando o mouse passa por cima */
 }
 
 /* O Conteúdo do Card */
-.content p{
+.content p {
     color: #828282;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
-.content span{
+.content span {
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 /* Botão */
-button{
+button {
     position: absolute;
     bottom: 50px;
     left: 50%;
     margin-bottom: 40px;
-    transform:  translateX(-50%);
+    transform: translateX(-50%);
     background-color: #fc6133;
     color: white;
     border: none;
@@ -103,12 +106,15 @@ button{
     width: 300px;
     height: 55px;
     padding: 10px 20px;
-    opacity: 0; /* --> Deixa o botão escondido */
+    opacity: 0;
+    /* Deixa o botão escondido */
     transition: 1s;
 }
+
 button:hover {
-    background-color:#00b081;
+    background-color: #00b081;
 }
+
 button a {
     color: white;
     font-family: 'Dosis', sans-serif;
@@ -117,7 +123,8 @@ button a {
 }
 
 .card:hover button {
-    opacity: 1; /* --> Faz o botão aparecer quando o mouse passa por cima */
+    opacity: 1;
+    /* Faz o botão aparecer quando o mouse passa por cima */
 }
 
 /* Camada de Desfoque(ou Blur) */
@@ -131,24 +138,96 @@ button a {
     bottom: -1px;
     position: absolute;
     transition: 1s;
-    opacity: 0; /* --> Deixa o desfoque escondido */
+    opacity: 0;
+    /* --> Deixa o desfoque escondido */
 }
 
 .card:hover .blur {
-    opacity: 1; /* --> Faz o desfoque aparecer quando o mouse passa por cima */
+    opacity: 1;
+    /* --> Faz o desfoque aparecer quando o mouse passa por cima */
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    color: #f0f0f0;;
-    border-radius: 5px;
+    color: #f0f0f0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: #f38e23;
-    padding: 20px 0 ;
+    padding: 20px;
     width: 100%;
     font-size: 1.5em;
 }
 
 footer a {
-    color: #f0f0f0;;
+    color: #f0f0f0;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Media Query CELULAR*/
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    header {
+        font-size: 1.3em;
+        padding: 14px 20px;
+    }
+
+    header img {
+        width: 75px;
+        height: 25px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    header nav a {
+        padding: 0px 10px 0px 0px;
+        font-size: 9px;
+        font-weight: 500;
+        display: flex;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    .card img {
+        width: 150px;
+    }
+
+    .card .content h2 {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .card .content span {
+        font-size: 0.8em;
+    }
+
+    .card .content p {
+        font-size: 0.6em;
+    }
+
+    .card button {
+        width: 125px;
+        height: 40px;
+    }
+
+    .card button a {
+        font-size: 10px;
+    }
+
+    .blur {
+        height: 50%;
+    }
+
+
+
+    footer {
+        font-size: 0.8em;
+    }
 }
