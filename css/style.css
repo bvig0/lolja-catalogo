@@ -204,7 +204,7 @@ footer a {
     }
 
     .card .content h2 {
-        font-size: 1em;
+        font-size: 0.7rem;
         padding: 0 10px;
     }
 
@@ -250,10 +250,6 @@ footer a {
         padding: 0px 10px 0px 0px;
         font-weight: 500;
         display: flex;
-    }
-
-    .card .content h2 {
-        font-size: 0.7em;
     }
 }
 
