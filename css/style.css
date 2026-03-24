@@ -15,7 +15,8 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 1.5em;
-    box-shadow: 0 4px 8px var(--cor-preto);;
+    box-shadow: 0 4px 8px var(--cor-preto);
+    ;
 }
 
 header nav a {
@@ -40,7 +41,8 @@ header nav a {
     width: 350px;
     border-radius: 10px;
     background-color: var(--cor-branco);
-    box-shadow: 0 4px 8px var(--cor-preto);;
+    box-shadow: 0 4px 8px var(--cor-preto);
+    ;
     position: relative;
     line-height: 1.5;
     padding-bottom: 15px;
@@ -262,5 +264,9 @@ footer a {
         padding: 0px 10px 0px 0px;
         font-weight: 500;
         display: flex;
+    }
+
+    .card .content h2 {
+        font-size: 0.7em;
     }
 }
